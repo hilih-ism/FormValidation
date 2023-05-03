@@ -1,0 +1,49 @@
+<html>
+<style>
+#sub{
+  background-color: #00ff00; 
+  color: #000000; 
+  padding: 5px 10px; 
+  border-radius: 50px;
+  cursor: pointer;
+}
+</style>
+<h3 style="text-align: center;">This is a Survey</h3>
+<form action="acceptForm.php" method="post">
+<fieldset>
+Tell us your name: <input type="text" name="name" placeholder="Name"><br>
+
+Gender: <input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br>
+
+Password: <input type="password" name="pass" placeholder="Password"><br>
+
+What is your favorite color? <input type="color" name="favcolor" placeholder="Favorite Color" value=""><br>
+
+If you have a website link it here: <input type="url" id="site" name="site" placeholder="Website"><br>
+
+Phone number: <input type="tel" id ="phone" name="phone" placeholder="123-456-7890"><br>
+
+What is your Hobby? <input type="text" name="hobby" placeholder="Hobby"><br>
+
+What is your Birthday? <input type="date"id="birthday" name="birthday" ><br>
+
+What is your Salary? <input type="number" name="sal" placeholder="Salary"><br>
+
+Whuch department are you in? <select name="dept" id="dept">
+<option value="">-- Select an option --</option>
+  <option value="Computer Science">Computer Science</option>
+  <option value="Philosophy">Philosophy</option>
+  <option value="Architecture">Architecture</option>
+  <option value="Culinary Arts">Culinary Arts</option>
+  <option value="Astronomy">Astronomy</option>
+</select><br>
+
+<form action="acceptForm.php" enctype="multipart/form-data">
+Share your resume: <input type="file" name="file"><br>
+</form>
+
+<input id ='sub' type="submit" value="Submit">
+</fieldset>
+</form>
+</html>
